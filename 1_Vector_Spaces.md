@@ -1,11 +1,11 @@
-## $\R^n$ 与 $\C^n$
+## $\mathbb{R}^n$ 与 $\mathbb{C}^n$
 
 ### 复数
 
 **复数**的定义：
 
 * 有序实数对，写作 $a+bi$
-* 复数集合记作 $\C$
+* 复数集合记作 $\mathbb{C}$
 * 复数加法与乘法按多项式定义
 
 复数的性质：
@@ -48,7 +48,7 @@
 
 加法逆：
 
-> For any $\alpha = a+bi \in \C$, we can construct $\beta = -a - bi$, then:
+> For any $\alpha = a+bi \in \mathbb{C}$, we can construct $\beta = -a - bi$, then:
 >
 > $\alpha+\beta = (a-a) + (b-b)i$ = 0
 >
@@ -67,7 +67,7 @@ $-\alpha$、减法、$1/\alpha$、除法：
 * 记加法逆与乘法逆为$-\alpha$、$1/\alpha$
 * 记减法为加上加法逆，除法为乘上乘法逆
 
-$\mathbb{F}$：域，在本书中表示 $\C$ 或 $\R$。
+$\mathbb{F}$：域，在本书中表示 $\mathbb{C}$ 或 $\mathbb{R}$。
 
 ### 组（Lists）
 
@@ -92,7 +92,6 @@ $\mathbb{F}^n$ 加法交换律证明：
 > Let $x = (x_1,...,x_n)$, $y=(y_1,...,y_n)$
 >
 > Then:
->
 > $$
 > \begin{aligned}x + y &= (x_1+y_1,...,x_n+y_n)\\
 >&=(y_1+x_1,...,y_n+x_n)\\
