@@ -1,3 +1,5 @@
+# Chapter 1: Vector Spaces
+
 ## $\mathbb{R}^n$ 与 $\mathbb{C}^n$
 
 ### 复数
@@ -108,3 +110,97 @@ $0$ 向量的定义： $0=(0,...,0)$
 
 标量乘法的定义：$\gamma(x_1,...,x_n) = (\gamma x_1,...,\gamma x_n)$
 
+## Definition of Vector Spaces
+
+### 向量空间
+
+首先定义集合内的加法与数乘：
+
+* 加法：从集合中的两个元素到集合中的一个元素的函数
+* 数乘：从集合中的一个元素与 $\mathbb{F}$ 中的一个数到集合中的一个元素的函数
+
+**向量空间**的定义：
+
+* 满足集合加法与集合数乘的集合
+* 交换律（加法）
+* 结合律（加法与数乘）
+* 加法单位元
+* 加法逆
+* 数乘单位元
+* 分配律
+
+向量空间内的元素可称为向量或者点。
+
+在 $\mathbb{R}$ 上的向量空间为实向量空间，在 $\mathbb{C}$ 上的向量空间为复向量空间。
+
+### $\mathbb{F}^\mathbb{S}$ 
+
+$\mathbb{F}^\mathbb{S}$ 是定义域为集合 $\mathbb{S}$，值域为 $\mathbb{F}$ 的函数的集合。
+
+$\mathbb{F}^\mathbb{S}$ 是一个向量空间。
+
+### 向量空间的基本性质
+
+* 唯一加法单位元
+* 唯一加法逆
+* 0 数乘任何向量得向量 0
+* 任何数数乘向量 0 得向量 0
+* -1 数乘向量得到该向量的加法逆
+
+证明：
+
+唯一加法单位元：
+
+> Suppose $0$ and $0'$ are both the additive identities for a vector space $V$.
+>
+> Then: $0' = 0' + 0 = 0 + 0' = 0$
+>
+> So the additive identity is unique for a vector space.
+>
+> $\blacksquare$
+
+唯一加法逆：
+
+> Suppose $V$ is a vector space, $v\in V$, $w$ and $w'$ are both additive inverse of $v$.
+>
+> Then: $w' = w' + 0 = w' + (v + w) = (w' + v) + w = = 0 + w = w$
+>
+> So the additive inverse is unique in a vector space.
+>
+> $\blacksquare$
+
+0 数乘任何向量得向量 0：
+
+> For $v\in V$, we have:
+>
+> $0v=(0+0)v=0v+0v$
+>
+> add the additive inverse of $0v$ to both side of the equation, we get:
+>
+> $0 = 0v$
+>
+> $\blacksquare$
+
+任何数数乘向量 0 得向量 0:
+
+> For $a\in F$, we have:
+>
+> $a0 = a(0+0) = a0+a0$
+>
+> add the additive inverse of $a0$ to both side of the equation, we get:
+>
+> $0 = a0$
+>
+> $\blacksquare$
+
+-1 数乘向量得到该向量的加法逆:
+
+> For $v\in V$, we have:
+>
+> $v + (-1)v =1v + (-1)v = (1+(-1))v=0v=0$
+>
+> So $(-1)v$ is the additive inverse of $v$.
+>
+> So $(-1)v = -v$
+>
+> $\blacksquare$
