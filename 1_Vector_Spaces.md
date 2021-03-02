@@ -109,12 +109,9 @@ $\mathbb{F}^n$ 加法交换律证明：
 > Let $x = (x_1,...,x_n)$, $y=(y_1,...,y_n)$
 >
 > Then:
-> $$
-> \begin{aligned}x + y &= (x_1+y_1,...,x_n+y_n)\\
->&=(y_1+x_1,...,y_n+x_n)\\
->  &=y+x
->\end{aligned}
-> $$
+> $x + y = (x_1+y_1,...,x_n+y_n)$
+> $=(y_1+x_1,...,y_n+x_n)$
+> $=y+x$
 > $\blacksquare$
 
 $\mathbb{F}^n$ 里面的元素可以称为**向量**。
