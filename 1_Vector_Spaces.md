@@ -34,7 +34,14 @@
 
 结合律：
 
-> 
+> Let: $\alpha = a + bi$, $\beta = c + di$, $\gamma=e+fi$ where $a,b,c,d,e,f\in\mathbb{R}$
+>
+> Then:
+> $(\alpha + \beta) +\gamma = (a + c + e) + (b + d + f)i = \alpha + (\beta + \gamma)$
+>
+> $(\alpha\beta)\gamma = (ace-adf-bcf-bde)+(acf+ade+bce-bdf)i = \alpha(\beta\gamma)$
+>
+> $\blacksquare$
 
 单位元：
 
@@ -52,17 +59,25 @@
 
 > For any $\alpha = a+bi \in \mathbb{C}$, we can construct $\beta = -a - bi$, then:
 >
-> $\alpha+\beta = (a-a) + (b-b)i$ = 0
+> $\alpha+\beta = (a-a) + (b-b)i = 0$
 >
 > $\blacksquare$
 
 乘法逆：
 
-> 
+> For any $\alpha = a+bi \in \mathbb{C}$ such that $\alpha\ne 0$, we can construct $\beta = \frac{a-bi}{a^2+b^2}$, then:
+>
+> $\alpha\beta = (a+bi)\frac{a-bi}{a^2+b^2}=\frac{a^2+b^2}{a^2+b^2}=1$
+>
+> $\blacksquare$
 
 分配律：
 
-> 
+> Let: $\alpha = a + bi$, $\beta = c + di$, $\gamma=e+fi$, where $a,b,c,d,e,f\in\mathbb{R}$
+>
+> $\gamma(\alpha+\beta)=(ae+ce-bf-df)+(af+be+cf+de)i=\gamma\alpha+\gamma\beta$
+>
+> $\blacksquare$
 
 $-\alpha$、减法、$1/\alpha$、除法：
 
