@@ -224,5 +224,55 @@ $ST$ 其实就是函数复合 $S\circ T$，但是当两个函数都是线性的�
 
 ## 3.C Matrices
 
-## 用矩阵来表示线性映射
+### 用矩阵来表示线性映射
 
+矩阵的定义：一个 $m\times n$ 的矩阵是一个由 $\mathbb{F}$ 中的元素组成的 $m$ 行 $n$ 列的矩形阵列，形如：
+
+$\left(\begin{matrix}A_{1,1}&\cdots&A_{1,n}\\\vdots&&\vdots\\A_{m,1}&\cdots&A_{m,n}\end{matrix}\right)$
+
+线性映射的矩阵的定义：对于 $T\in\mathcal{L}(V,W)$，$v_1,...,v_n$ 是 $V$ 的一组基，$w_1,...,w_m$ 是 $W$ 的一组基，那么该线性映射的矩阵表示记为 $\mathcal{M}(T)$，定义为：$Tv_k=A_{1,k}w_1+...+A_{m,k}w_m$。如果基不是上下文自明的，那么记为 $\mathcal{M}(T,(v_1,...,v_n),(w_1,...,w_m))$。
+
+### 矩阵的加法与数乘
+
+定义略。
+
+对于 $S,T\in\mathcal{L}(V,W)$，有 $\mathcal{M}(S+T)=\mathcal{M}(S)+\mathcal{M}(T)$。（3.36）
+
+证明：
+
+> 
+
+对于 $\lambda\in\mathbb{F}$ 和 $T\in\mathcal{L}(V,W)$，有 $\mathcal{M}(\lambda T)=\lambda\mathcal{M}(T)$。（3.38）
+
+证明：
+
+> 
+
+对于所有的元素来自 $\mathbb{F}$ 的 $m\times n$ 矩阵所构成的集合，记为 $\mathbb{F}^{m,n}$。
+
+（3.40）定理：$dim\ F^{m,n}=mn$
+
+证明：
+
+> 
+
+### 矩阵乘法
+
+定义略。
+
+对于 $T\in\mathcal{L}(U,V)$ 与 $S\in\mathcal{L}(V,W)$，有 $\mathcal{M}(ST) =\mathcal{M}(S)\mathcal{M}(S)$。（3.43）
+
+证明：
+
+> 
+
+记号：
+
+* $A_{j,\cdot}$ 表示矩阵 $A$ 的第 $j$ 行组成的矩阵
+* $A_{\cdot,k}$ 表示矩阵 $A$ 的第 $k$ 列组成的矩阵
+
+（3.47）矩阵积的元素等于列乘行：$(AC)_{j,k}=A_{j,\cdot}C_{\cdot,k}$
+
+（3.49）矩阵积的列等于矩阵乘列：$(AC)_{\cdot,k}=AC_{\cdot,k}$
+
+（3.52）$Ac$ 是矩阵 $A$ 的列的线性组合。
