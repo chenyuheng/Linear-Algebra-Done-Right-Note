@@ -147,3 +147,82 @@ $ST$ 其实就是函数复合 $S\circ T$，但是当两个函数都是线性的�
 > $T(0)=T(0+0)=T(0)+T(0)$
 >
 > thus: $T(0)=0$
+
+## 3.B Null Spaces and Ranges
+
+### Null Space and Injectivity
+
+对于 $T\in\mathcal{L}(V,W)$，$T$ 的**零空间**定义为包含所有被 $T$ 映射到 $0$ 的 $V$ 的子集，即：$null\ T=\{v\in V:Tv=0\}$
+
+零空间是子空间。（3.14）
+
+证明：
+
+> As $T$ is a linear map and $T(0) = 0$, we know that $0$ is in $null\ T$.
+>
+> Suppose $u, v \in null\ T$, $\lambda\in\mathbb{F}$.
+>
+> $T(u+v) = Tu+Tv=0+0=0$
+>
+> $T(\lambda u)=\lambda Tu = \lambda 0 = 0$
+>
+> Thus $null\ T$ is a subspace.
+
+对于函数 $T:V\rightarrow W$，如果 $Tu=Tv$ 意味着 $u=v$，那么称此函数是**单射的**。
+
+ 单射的线性映射等价于零空间为 $\{0\}$。（3.16）
+
+证明：
+
+> If linear map $T$ is injective:
+>
+> ​	Suppose $v\in null\ T$, then we have: $Tv=0=T0$, as $T$ is injective, we have $v=0$.
+>
+> If for linear map $T\in\mathcal{L}(V,W)$, $null\ T = \{0\}$:
+>
+> ​	Suppose for $u,v\in V$, $Tu=Tv$, so $Tu-Tv=0$, $T(u-v)=0$.
+>
+> ​	As $null\ T=\{0\}$, we have $u-v=0$, so $u=v$. Thus we know $T$ is injective.
+
+### Range and Surjectivity
+
+对于从 $V$ 到 $W$ 的函数 $T$，$T$ 的**值域**是 $W$ 的子集，包含所有的 $Tv$ （$v\in V$），即：$range\ T =\{Tv:v\in V\}$。
+
+线性映射的值域是其到达域的子空间。（3.19）
+
+证明：
+
+> $T0=0$, so $0\in W$.
+>
+> As $T$ is a linear map, and $Tw\in W$ for any $w\in V$, easy to know that $range\ T$ is closed under addition and scalar multiplication.
+>
+> Thus $range\ T$ is a subspace of $W$.
+
+如果一个函数的值域等于其到达域，那么称该函数为**满射的**。
+
+### Fundamental Theorem of Linear Maps
+
+线性映射基本定理：如果 $V$ 是一个有限维向量空间，$T\in\mathcal{L}(V,W)$，那么 $range\ T$ <u>是有限维的</u>，并且 $dim\ V=dim\ null\ T + dim\ range\ T$。（3.22）
+
+证明：
+
+> 
+
+线性映射基本定理的一系列简单推论：
+
+3.23 高维往低维的线性映射不是单射的。
+
+3.24 低维往高维的线性映射不是满射的。
+
+3.26 当变量多于方程时，齐次线性方程组必有非零解。
+
+3.29 当方程多余变量时，必有一组常数解是的相应的非齐次线性方程组无解。
+
+证明：
+
+> 
+
+## 3.C Matrices
+
+## 用矩阵来表示线性映射
+
